@@ -19,8 +19,8 @@ steps:
   displayName: 'Run a multi-line script'
   
 - job: build
-  displayName: 'Build'
-  steps:
+displayName: 'Build'
+steps:
   - task: Gradle@3
     inputs:
       gradleWrapperFile: 'gradlew'
