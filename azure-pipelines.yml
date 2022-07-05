@@ -1,6 +1,6 @@
 trigger:
 - main
-- feature-darwinMunoz-interfaz
+
 
 pool:
   vmImage: ubuntu-latest
@@ -40,9 +40,9 @@ jobs:
   - task: SonarCloudPrepare@1
     inputs:
       SonarCloud: 'Sonarcloud'
-      organization: 'devops-foundation'
-      projectKey: 'devops-foundation'
-      projectName: 'testing-web'
+      organization: 'anvegac'
+      projectKey: 'anvegac_spring-clinic'
+      projectName: 'spring-clinic'
     displayName: 'Preparing Sonarqube Environment'
     
   - task: Gradle@3
